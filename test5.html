@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog en ligne</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-blue-100">
+    <header class="bg-white text-blue-500 py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <div class="flex items-center">
+          <img
+            src="https://tse1.mm.bing.net/th?id=OIP.hU1B1kOoR795iCXCl-W0_wHaHa&pid=Api&P=0&h=180"
+            alt="Logo"
+            class="h-8 mr-2"
+          />
+          <h1 class="text-2xl font-bold">Hafseya Sport</h1>
+        </div>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#" class="hover:text-gray-300">Accueil</a></li>
+            <li><a href="#" class="hover:text-gray-300">Articles</a></li>
+            <li><a href="#" class="hover:text-gray-300">À propos</a></li>
+            <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="py-8">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            src="https://i.pinimg.com/564x/13/38/eb/1338eb92dac65d5295329d03e99b9585.jpg"
+            alt="Article 1"
+            class="object-cover w-full h-48"
+          />
+          <div class="p-4">
+            <h2 class="text-lg font-semibold mb-2">
+              Louis Vuitton x Nike Air Force 1
+            </h2>
+            <p class="text-sm text-gray-600">
+              Virgil Abloh's Louis Vuitton x Nike Air Force 1 collaboration sold
+              for a cumulative $25.3m at Sotheby's auction, with one pair
+              scoring over $352k.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            src="https://i.pinimg.com/564x/27/db/49/27db4923eea3b5ce1125a041bc2aabf3.jpg"
+            alt="Article 1"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-lg font-semibold mb-2">
+              Nike Air Force 1 Low Custom Light Smokey Grey
+            </h2>
+            <p class="text-sm text-gray-600">
+              The Nike Air Force 1 Low Custom Light Smokey Grey is a stylish and
+              versatile sneaker featuring a light grey colorway with black
+              accents on the Swoosh, laces, and heel tab. The shoe is
+              constructed with premium materials for added durability and
+              comfort, and is perfect for any occasion.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            src="https://i.pinimg.com/564x/f4/66/65/f46665e379034f382872c3156b2b7476.jpg"
+            alt="Article 1"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-lg font-semibold mb-2">
+              Nike Lunar Force 1 Bespoke "Reversed Cork" by SLOVADON
+            </h2>
+            <p class="text-sm text-gray-600">
+              LeBron X inspiration is flipped on the Nike Lunar Force 1 Bespoke
+              Reversed Cork by SLOVADON. Visit Nice Kicks for pics of this
+              Bespoke AF1.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-xl font-semibold mb-4">Catégories</h2>
+        <div class="flex space-x-2">
+          <span class="bg-blue-500 text-white py-1 px-2 rounded-lg"
+            >classique</span
+          >
+          <span class="bg-blue-500 text-white py-1 px-2 rounded-lg"
+            >sport</span
+          >
+          <span class="bg-blue-500 text-white py-1 px-2 rounded-lg">sport-chic</span>
+         
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8">
+      <div class="container mx-auto px-4">
+        <h2 class="text-xl font-semibold mb-4">Articles récents</h2>
+        <ul class="space-y-4">
+          <li>
+            <a href="#" class="text-lg font-semibold hover:text-blue-500"
+              >Louis Vuitton x Nike Air Force 1</a
+            >
+            <span class="text-sm text-gray-600"> - 14 mars 2024</span>
+          </li>
+       
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="py-8 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-xl font-semibold mb-4">Inscrivez-vous à notre newsletter</h2>
+            <form class="flex flex-col md:flex-row md:space-x-4" action="#" method="POST">
+                <input type="text" name="prenom" class="w-full md:w-48 bg-white border border-gray-300 rounded-lg py-2 px-4 mb-2" placeholder="Prénom">
+                <input type="text" name="nom" class="w-full md:w-48 bg-white border border-gray-300 rounded-lg py-2 px-4 mb-2 md:mb-0" placeholder="Nom">
+                <input type="tel" name="numero" class="w-full md:w-48 bg-white border border-gray-300 rounded-lg py-2 px-4 mb-2" placeholder="Numéro de téléphone">
+                <input type="email" name="email" class="w-full md:w-48 bg-white border border-gray-300 rounded-lg py-2 px-4 mb-2 md:mb-0" placeholder="Adresse e-mail">
+                <button type="submit" class="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out">S'abonner</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <ul class="flex space-x-4">
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+        <p class="text-sm">Bienvenue chez nous.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  </body>
+</html>
